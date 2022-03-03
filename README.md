@@ -26,6 +26,7 @@ Test task for [Digital Design](https://digdes.ru/it-university/courses/front-end
 
 #### Пример:
 getDayInfo(“01.01.2022”) // =&gt; Суббота, 1 неделя Января 2022 года
+
 getDayInfo(“15.12.2021”) // =&gt; Среда, 3 неделя Декабря 2021 года
 
 #### Ограничения:
