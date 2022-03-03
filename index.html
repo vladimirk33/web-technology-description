@@ -5,21 +5,106 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About WebGL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <nav></nav>
+    <header class="header">
+        <div class="container">
+            <h1>WebGL</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#introduction" class="nav-link"
+                            data-i18="introduction">Introduction</a></li>
+                    <li class="nav-item"><a href="#review" class="nav-link" data-i18="review">Review</a></li>
+                    <li class="nav-item"><a href="#links" class="nav-link" data-i18="links">Links</a></li>
+                </ul>
+            </nav>
+            <div class="switch-lang-container">
+                <span class="switch-lang-btn btn-en" data-language="en">en</span> /
+                <span class="switch-lang-btn btn-ru" data-language="ru">ru</span>
+            </div>
+        </div>
     </header>
     <main>
-        <section></section>
-    </main>
-    <footer>
+        <section id="introduction" class="section">
+            <div class="container">
+                <h2 class="section-heading" data-i18="introduction-heading">What is WebGL?</h2>
+                <p class="section-text" data-i18="introduction-text">WebGL (Web Graphics Library) is a JavaScript API
+                    for rendering high-performance
+                    interactive 3D and 2D
+                    graphics within any compatible web browser without the use of plug-ins. WebGL does so by introducing
+                    an API that closely conforms to OpenGL ES 2.0 that can be used in HTML5 canvas elements. This
+                    conformance makes it possible for the API to take advantage of hardware graphics acceleration
+                    provided by the user's device.</p>
+            </div>
+        </section>
+        <figure>
+            <img class="section-image" src="./assets/WebGL_Logo.svg">
+            <figcaption data-i18="webgl-logo">WebGL Logo</figcaption>
+        </figure>
+        <section id="review" class="section">
+            <div class="container">
+                <h2 class="section-heading" data-i18="review-heading">WebGL Review</h2>
+                <p class="section-text" data-i18="review-text">
+                    WebGL is a graphics application programming interface (API) created for use in web
+                    applications. It is based off the open graphics language (OpenGL) embedded standard (ES).
 
+                    WebGL is used by developers to provide a platform-independent means of creating interactive
+                    graphical
+                    applications on the web. WebGL is not only used to draw the graphics of 2D and 3D games, but also to
+                    accelerate the functions of web based image editors and their effects, as well as physics
+                    simulations.
+
+                    Although WebGL is functionally based off OpenGL ES, it is partly written in JavaScript. WebGL is
+                    used to
+                    render interactive 2D and 3D graphics in compatible web browsers. The API allows users to experience
+                    interactive content on webpages, with GPU acceleration, without having to first download or install
+                    any
+                    plug-ins. For developers, WebGL provides low-level access to hardware with the familiar code
+                    structure
+                    of
+                    OpenGL ES.
+
+                    WebGL was originally created by Mozilla. The API is currently designed and maintained by the
+                    non-profit
+                    Khronos Group as two part code: control code and shader code. Control code is written in JavaScript
+                    and
+                    processed on the CPU. Shader code which is written in OpenGL ES, which has much in common with
+                    languages
+                    like C or C++, and is processed on the GPU.
+                </p>
+            </div>
+        </section>
+        <section id="links" class="section">
+            <div class="container">
+                <h2 class="section-heading" data-i18="links-heading">Useful Links</h2>
+                <ul class="links-list">
+                    <li class="links-item"><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+                            target="_blank" class="links-link">WebGL 1.0 Specification</a></li>
+                    <li class="links-item"><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+                            target="_blank" class="links-link">WebGL 2.0 Specification</a></li>
+                    <li class="links-item"><a href="https://github.com/KhronosGroup/WebGL" target="_blank"
+                            class="links-link">Github repository</a></li>
+                    <li class="links-item"><a href="https://www.khronos.org/webgl/wiki/" target="_blank"
+                            class="links-link">WebGL Public Wiki</a></li>
+                    <li class="links-item"><a href="https://www.khronos.org/developers/reference-cards/" target="_blank"
+                            class="links-link">WebGL Reference Card</a></li>
+                </ul>
+            </div>
+        </section>
+        <button class="to-top-button">To Top</button>
+    </main>
+    <footer class="footer">
+        <div class="footer-data">
+            <span>&copy;</span>
+            <span>2022 <a href="https://github.com/vladimirk33" target="_blank" class="footer-link">Vladimir
+                    K.</a></span>
+        </div>
     </footer>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
